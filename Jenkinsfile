@@ -1,3 +1,5 @@
 @Library('belajar-jenkins-shared-library@main') _
 
-libraryPipeline()
+pznPipeline({
+    type: "library"
+})
