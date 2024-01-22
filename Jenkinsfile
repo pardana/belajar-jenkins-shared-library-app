@@ -5,10 +5,13 @@ import programmerzamannow.jenkins.Output
 pipeline {
     agent any
     stages {
-        stage('Maven Build') {
+        stage('Hello Person') {
             steps {
                 script {
-                    maven('clean compile')
+                    hello.person([
+                        firstName: 'Aditria',
+                        lastName: 'Pardana'
+                    ])
                 }
             }
         }
